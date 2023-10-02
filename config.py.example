@@ -1,0 +1,4 @@
+traccar_api_url   =  "http://xxx.yyy.zzz:8082/api/positions"
+traccar_user      = "traccaruser"
+traccar_pass      = "traccarpass"
+traccar_device_id = 1
