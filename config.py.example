@@ -2,3 +2,6 @@ traccar_api_url   =  "http://xxx.yyy.zzz:8082/api/positions"
 traccar_user      = "traccaruser"
 traccar_pass      = "traccarpass"
 traccar_device_id = 1
+time_from         = "2023-01-00T00:00:00Z"
+time_to           = "2023-01-00T23:59:59Z"
+filename          = "tracklog.gpx"

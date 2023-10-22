@@ -7,10 +7,9 @@ base_url = config.traccar_api_url
 traccar_user = config.traccar_user
 traccar_pass = config.traccar_pass
 traccar_device_id = config.traccar_device_id
-
-time_from = "2023-09-23T00:00:00Z"
-time_to = "2023-09-24T23:59:59Z"
-filename = "tracklog.gpx"
+time_from = config.time_from
+time_to = config.time_to
+filename = config.filename
 
 get_parameters = {"deviceId": traccar_device_id, "from": time_from, "to": time_to}
 print (get_parameters)
