@@ -29,9 +29,10 @@ gpx.tracks.append(gpx_track)
 gpx_segment = gpxpy.gpx.GPXTrackSegment()
 gpx_track.segments.append(gpx_segment)
 
+# TODO: Ignore records without elevation
 for point in gps_points:
     dt = datetime.strptime(point["fixTime"], "%Y-%m-%dT%H:%M:%S.000+00:00")
-    gpx_segment.points.append(gpxpy.gpx.GPXTrackPoint(point["latitude"], point["longitude"], time=dt))
+    gpx_segment.points.append(gpxpy.gpx.GPXTrackPoint(point["latitude"], point["longitude"], point["altitude"], time=dt))
 
 xml = gpx.to_xml()
 
